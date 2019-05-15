@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import style from '../scss/main.scss'
 
 export default class FolderContent extends Component {
     constructor(props) {
@@ -8,6 +9,15 @@ export default class FolderContent extends Component {
             name: this.props.name
         };
         this.nameInput = React.createRef();
+        this.startEditing = this.startEditing.bind(this);
+        this.cancelEditing = this.cancelEditing.bind(this);
+        this.handleNameChange = this.handleNameChange.bind(this);
+        this.handleKeyPress = this.handleKeyPress.bind(this);
+        this.handleDelete = this.handleDelete.bind(this);
+        this.renderInput = this.renderInput.bind(this);
+        this.renderIndent = this.renderIndent.bind(this);
+        this.renderButtons = this.renderButtons.bind(this);
+        this.renderName = this.renderName.bind(this);
     }
 
     startEditing() {

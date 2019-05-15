@@ -1,0 +1,229 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,ul {
+  list-style: none;
+}
+
+blockquote,q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.group:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+body {
+  background-color: #fafafa;
+  font: 1em 'Source Code Pro', sans-serif;
+}
+
+$pad: 10px;
+
+.app {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  h1 {
+    margin-top: 2 * $pad;
+    font-size: 3rem;
+    font-weight: 300;
+  }
+
+  .tagline {
+    margin-top: $pad/2;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
+
+.in {
+  .help {
+    font-weight: 300;
+    margin-top: 2 * $pad;
+  }
+
+  .examples {
+    margin-top: 2 * $pad;
+
+    li {
+      display: inline-block;
+      margin-left: $pad;
+    }
+
+  }
+
+  textarea {
+    width: 100%;
+    height: 300px;
+    margin-top: 2 * $pad;
+  }
+}
+
+#app {
+  text-align: left;
+}
+
+.indent {
+  display: inline-block;
+  width: 20px;
+  color: #ccc;
+
+  &:after {
+    content: '⬥';
+    font-size: .8rem;
+    font-weight: 300;
+  }
+
+  &:nth-child(1):after {
+    color: #2c3e50;
+  }
+  &:nth-child(2):after {
+    color: #8e44ad;
+  }
+  &:nth-child(3):after {
+    color: #2980b9;
+  }
+  &:nth-child(4):after {
+    color: #27ae60;
+  }
+  &:nth-child(5):after {
+    color: #16a085;
+  }
+  &:nth-child(6):after {
+    color: #f1c40f;
+  }
+  &:nth-child(7):after {
+    color: #e67e22;
+  }
+  &:nth-child(8):after {
+    color: #e74c3c;
+  }
+  &:nth-child(9):after {
+    color: #d35400;
+  }
+  &:nth-child(10):after {
+    color: #f39c12;
+  }
+}
+
+.folder-content {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+
+.folder-content .name {
+  &:hover {
+    &:after {
+      display: inline-block;
+      content: '✎';
+      color: #777;
+      margin-left: 10px;
+      font-size: 1rem;
+      -webkit-transform: scale(-1, 1);
+      transform: scale(-1, 1);
+    }
+  }
+}
+
+.cta-buttons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-right: 20px;
+  font-size: 1rem;
+  transform: translateY(-50%);
+  display: none;
+
+  li {
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #999999;
+    border-radius: 50%;
+    border: 1px solid;
+    padding: 5px 7px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.folder-content:hover {
+  .cta-buttons {
+    display: inline-block;
+  }
+}
+
+.add-new.folder-content {
+  margin-top: 30px;
+
+  .name {
+    color: #999999;
+    font-style: italic;
+
+    &:hover:after {
+      display: none;
+    }
+  }
+  .cta-buttons {
+    display: inline-block;
+
+    li {
+      transform: rotate(45deg);
+    }
+
+  }
+}
+
+
+
+
+

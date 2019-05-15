@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import FolderContent from './FolderContent'
+import style from '../scss/main.scss'
 
 export default class FolderStructure extends Component{
     constructor(props) {
@@ -92,7 +93,7 @@ export default class FolderStructure extends Component{
                 }
                 <div onClick={this.addNewComment} className='add-new folder-content'>
                     <ul className='cta-buttons'>
-                        <li onClick={}>⛌</li>
+                        <li onClick={()=>null}>⛌</li>
                     </ul>
                     <span className='name'>{''}</span>
                 </div>
