@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31b234f4-fd3d-4dbb-9257-554b831e35fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/react/FolderContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/react/FolderContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/react/FolderStructure.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/react/FolderStructure.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/react/FolderStructure.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="95" column="45" selection-start-line="95" selection-start-column="45" selection-end-line="95" selection-end-column="45" />
+            <state>
+              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
                 <element signature="e#1463#1852#0" />
@@ -39,19 +33,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/react/FolderContent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="216">
+              <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
-                <element signature="e#269#285#0" />
                 <element signature="e#424#440#0" />
-                <element signature="e#497#513#0" />
-                <element signature="e#583#599#0" />
                 <element signature="e#934#950#0" />
-                <element signature="e#1004#1059#0" />
-                <element signature="e#1084#1295#0" />
                 <element signature="e#1740#1862#0" />
-                <element signature="e#1877#2273#0" />
               </folding>
             </state>
           </provider>
@@ -102,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4014">
-              <caret line="223" column="1" selection-start-line="223" selection-start-column="1" selection-end-line="223" selection-end-column="1" />
+            <state relative-caret-position="185">
+              <caret line="181" column="30" lean-forward="true" selection-start-line="181" selection-start-column="30" selection-end-line="181" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -128,8 +116,10 @@
       <find>favicon.ico</find>
       <find>indent</find>
       <find>onclick</find>
-      <find>indent</find>
+      <find>onIndent</find>
       <find>startEditing</find>
+      <find>renderInput</find>
+      <find>indent</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,10 +132,10 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/dataDump.js" />
-        <option value="$PROJECT_DIR$/src/scss/main.scss" />
         <option value="$PROJECT_DIR$/src/react/App.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/scss/main.scss" />
         <option value="$PROJECT_DIR$/src/react/FolderStructure.js" />
         <option value="$PROJECT_DIR$/src/react/FolderContent.js" />
       </list>
@@ -225,7 +215,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557867921028</updated>
-      <workItem from="1557867922448" duration="12344000" />
+      <workItem from="1557867922448" duration="14761000" />
     </task>
     <task id="LOCAL-00001" summary="Folder Structure UI">
       <created>1557898822414</created>
@@ -248,11 +238,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557932975542</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="SCSS and bindings">
+      <created>1557938927259</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1557938927259</updated>
+    </task>
+    <task id="LOCAL-00005" summary="changed margin to padding">
+      <created>1557939022049</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1557939022049</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12344000" />
+    <option name="totallyTimeSpent" value="14761000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3278" y="-8" width="1936" height="1216" extended-state="6" />
@@ -262,14 +266,14 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15494448" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32986766" />
       <window_info anchor="bottom" id="GraphQL" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32986766" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32986766" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5567108" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5567108" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -286,7 +290,9 @@
     <MESSAGE value="Folder Structure UI" />
     <MESSAGE value="Added bind statements for class functions and started work on the content component" />
     <MESSAGE value="Folder Content Class that lets you make changes to the folder object" />
-    <option name="LAST_COMMIT_MESSAGE" value="Folder Content Class that lets you make changes to the folder object" />
+    <MESSAGE value="SCSS and bindings" />
+    <MESSAGE value="changed margin to padding" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed margin to padding" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -323,20 +329,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4014">
-          <caret line="223" column="1" selection-start-line="223" selection-start-column="1" selection-end-line="223" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -354,10 +346,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="181" column="30" lean-forward="true" selection-start-line="181" selection-start-column="30" selection-end-line="181" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/react/FolderStructure.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="95" column="45" selection-start-line="95" selection-start-column="45" selection-end-line="95" selection-end-column="45" />
+        <state>
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
             <element signature="e#1463#1852#0" />
@@ -368,19 +374,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/react/FolderContent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="216">
+          <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
-            <element signature="e#269#285#0" />
             <element signature="e#424#440#0" />
-            <element signature="e#497#513#0" />
-            <element signature="e#583#599#0" />
             <element signature="e#934#950#0" />
-            <element signature="e#1004#1059#0" />
-            <element signature="e#1084#1295#0" />
             <element signature="e#1740#1862#0" />
-            <element signature="e#1877#2273#0" />
           </folding>
         </state>
       </provider>

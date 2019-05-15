@@ -8,7 +8,7 @@ export default class FolderContent extends Component {
             editing: false,
             name: this.props.name
         };
-        this.nameInput = React.createRef();
+        this.focusRef = React.createRef();
         this.startEditing = this.startEditing.bind(this);
         this.cancelEditing = this.cancelEditing.bind(this);
         this.handleNameChange = this.handleNameChange.bind(this);
@@ -21,8 +21,10 @@ export default class FolderContent extends Component {
     }
 
     startEditing() {
-        this.setState({editing: true},
-            ()=> { this.nameInput.focus() });
+        this.setState({editing: true},()=>{
+            this.focusRef.current.focus();
+        });
+
     }
 
     cancelEditing() {
@@ -38,9 +40,9 @@ export default class FolderContent extends Component {
         if(key ==="Enter" || key === "Escape") {
             this.cancelEditing();
         } else if(event.shiftKey && key === "Tab") {
-            this.props.Indent(this.props.id, 'un');
+            this.props.onUnIndent(this.props.id, 'un');
         } else if(key === "Tab") {
-            this.props.Indent(this.props.id, 'in')
+            this.props.onIndent(this.props.id, 'in')
         }
     }
 
@@ -51,7 +53,7 @@ export default class FolderContent extends Component {
     renderInput() {
         return (
             <input
-                ref={this.nameInput}
+                ref={this.focusRef}
                 type='text'
                 onKeyDown={this.handleKeyPress}
                 onChange={this.handleNameChange}
