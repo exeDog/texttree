@@ -38,4 +38,57 @@ export default class FolderContent extends Component {
         this.props.onDelete(this.props.id);
     }
 
+    renderInput() {
+        return (
+            <input
+                ref={this.nameInput}
+                type='text'
+                onKeyDown={this.handleKeyPress}
+                onChange={this.handleNameChange}
+                onBlur={this.cancelEditing}
+                value={this.state.name}
+            />
+        );
+    }
+
+    renderIndent() {
+        let depth = this.props.depth,depthArr = [],i;
+        for (i = 0; i < depth; i++) {
+            depthArr.push(<span key={'indent'+i} className='indent'></span>)
+        }
+        return depthArr;
+    }
+
+    renderButtons() {
+        return (
+            <ul className='cta-buttons'>
+                <li onClick={this.handleDelete}>⛌</li>
+            </ul>
+        )
+    }
+
+    renderName() {
+        return (
+            <span onClick={this.startEditing} className='name'>{this.state.name}</span>
+        )
+    }
+
+    render() {
+        let elm = '';
+        const { editing } = this.state;
+
+        if (editing) {
+            elm = this.renderInput();
+        } else {
+            elm = this.renderName();
+        }
+
+        return (
+            <div className='folder-content group'>
+                {this.renderButtons()}
+                {this.renderIndent()}
+                {elm}
+            </div>
+        )
+    }
 }
