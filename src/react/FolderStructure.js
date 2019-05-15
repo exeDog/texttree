@@ -6,7 +6,10 @@ export default class FolderStructure extends Component{
         super(props);
         this.state = {
             contents: this.props.contents,
-        }
+        };
+        this.Indent = this.Indent.bind(this);
+        this.onDelete = this.onDelete.bind(this);
+        this.addNewComment = this.addNewComment.bind(this);
     }
 
     Indent(id,type) {
