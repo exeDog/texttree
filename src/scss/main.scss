@@ -29,15 +29,16 @@ body {
   line-height: 1;
 }
 
-ol,ul {
+ol, ul {
   list-style: none;
 }
 
-blockquote,q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: '';
   content: none;
 }
@@ -48,14 +49,14 @@ table {
 }
 
 .group:after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
 
 body {
   background-color: #fafafa;
-  font: 1em 'Source Code Pro', sans-serif;
+  font: 1em 'Source Sans Pro', sans-serif;
 }
 
 $pad: 10px;
@@ -81,6 +82,7 @@ header {
 }
 
 .in {
+
   .help {
     font-weight: 300;
     margin-top: 2 * $pad;
@@ -88,12 +90,10 @@ header {
 
   .examples {
     margin-top: 2 * $pad;
-
     li {
       display: inline-block;
       margin-left: $pad;
     }
-
   }
 
   textarea {
@@ -101,6 +101,7 @@ header {
     height: 300px;
     margin-top: 2 * $pad;
   }
+
 }
 
 #app {
@@ -155,7 +156,7 @@ header {
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 10px;
-  margin-left: 40px;
+  padding-left: 40px;
 }
 
 .folder-content .name {
@@ -222,8 +223,3 @@ header {
 
   }
 }
-
-
-
-
-
