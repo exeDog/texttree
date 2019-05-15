@@ -72,6 +72,30 @@ export default class FolderStructure extends Component{
     }
 
     render() {
+        return (
+            <div className='folder-structure'>
+                {
+                    this.state.contents.map((content,index) => {
+                        return <FolderContent
+                            key={'content-'+index}
+                            id={content.id}
+                            name={content.name}
+                            depth={content.depth}
+                            onDelete={this.onDelete}
+                            onIndent={this.Indent}
+                            onUnIndent={this.Indent}
+                        />
+                    })
+                }
+                <div onClick={this.addNewComment} className='add-new folder-content'>
+                    <ul className='cta-buttons'>
+                        <li onClick={}>⛌</li>
+                    </ul>
+                    <span className='name'>{''}</span>
+                </div>
+            </div>
+
+        )
 
     }
 
