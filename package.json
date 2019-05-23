@@ -2,6 +2,7 @@
   "name": "texttree",
   "version": "1.0.0",
   "main": "index.js",
+  "author": "Priyank",
   "scripts": {
     "dev": "webpack-dev-server --inline --colors"
   },
@@ -20,5 +21,8 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
+  },
+  "bin": {
+    "textree": "./backend/bin/cli.js"
   }
 }
