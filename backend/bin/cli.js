@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const run = require('npm-run').execSync;
 
 let _walk = require('../src/walk');
 let textree = require('../src/texttree');
@@ -14,6 +15,8 @@ function _init() {
         let data = _walk(folder, {});
         if (data) {
             console.log(textree(data));
+            run("npm run dev");
+
         }
     } else {
         _usage(folder);

@@ -4,7 +4,8 @@
   "main": "index.js",
   "author": "Priyank",
   "scripts": {
-    "dev": "webpack-dev-server --inline --colors"
+    "dev": "webpack-dev-server --inline --colors",
+    "play": "webpack && http-server -a localhost -o"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
@@ -16,7 +17,9 @@
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.12.0",
+    "npm-run": "^5.0.1",
+    "http-server": "^0.11.1"
   },
   "dependencies": {
     "react": "^16.8.6",
