@@ -1,8 +1,14 @@
-import React from 'react'
-import data from '../dataDump'
+import React, { useEffect } from 'react'
 import FolderStructure from './FolderStructure'
+import websocketDriver from '../../backend/bin/webDriver';
+
 
 const App = () => {
+    let data = [];
+    useEffect(()=>{
+        console.log(websocketDriver._get());
+        data = websocketDriver;
+    },[]);
     return(
         <FolderStructure contents={data}/>
     )

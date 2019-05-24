@@ -25,6 +25,11 @@ let Textree = {
         return Textree.output;
     },
 
+    webdriver: function(input,options) {
+        Textree._init(input, options);
+        return Textree._removeNull(input.contents);
+    },
+
     _init: function (input, options) {
         Textree.output = '';
         Textree.input = input;
@@ -129,4 +134,7 @@ let Textree = {
 
 };
 
-module.exports = Textree.textree;
+module.exports = {
+    textree: Textree.textree,
+    webdriver: Textree.webdriver
+};
