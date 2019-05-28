@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 import FolderStructure from './FolderStructure'
-import websocketDriver from '../../backend/bin/webDriver';
 
 
 const App = () => {
     let data = [];
     useEffect(()=>{
-        console.log(websocketDriver._get());
-        data = websocketDriver;
+       fetch('/data')
+           .then(response => response.json())
+           .then(response => console.log(response));
     },[]);
     return(
         <FolderStructure contents={data}/>

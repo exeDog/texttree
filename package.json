@@ -5,7 +5,7 @@
   "author": "Priyank",
   "scripts": {
     "dev": "webpack-dev-server --inline --colors",
-    "play": "webpack && http-server -a localhost -o"
+    "play": "concurrently \"webpack\" \" node backend/bin/node\""
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
@@ -19,11 +19,14 @@
     "webpack-dev-server": "^1.14.1",
     "node-sass": "^4.12.0",
     "npm-run": "^5.0.1",
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "express": "^4.17.1",
+    "concurrently": "^4.1.0"
   },
   "dependencies": {
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "body-parser": "latest"
   },
   "bin": {
     "textree": "./backend/bin/cli.js"

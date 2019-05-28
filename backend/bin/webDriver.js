@@ -1,18 +1,16 @@
-const cli = require('./cli');
+const fs = require('fs');
 
 let websocketDriver = {
+    data : [],
     _get: function () {
-        return this._getDataFromCli()
+        console.log(this.data);
+        return this.data;
     },
 
-    _getDataFromCli: function () {
-       return cli.getData;
+    _getDataFromCli: function (data) {
+      this.data = data;
     },
 
-    _init: function () {
-     this.data = [];
-    }
 };
-
 
 module.exports =  websocketDriver;

@@ -19,7 +19,7 @@ let cli = {
                 this.result = textree.webdriver(data);
                 websocketDriver._getDataFromCli(this.result);
                 console.log(textree.textree(data));
-                run("npm run dev");
+                run("npm run play");
 
             }
         } else {
