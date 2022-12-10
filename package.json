@@ -20,7 +20,7 @@
     "node-sass": "^4.12.0",
     "npm-run": "^5.0.1",
     "http-server": "^0.11.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "concurrently": "^4.1.0"
   },
   "dependencies": {
